@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 import Markdown from 'markdown-to-jsx'
+import pdf from './Resume_LuongVanThuan_JrDev.pdf'
 
 function App() {
 
@@ -17,9 +18,17 @@ function App() {
       .then(text => setPost(text))
   })
   }, []);
+
+  const openPdf = () => {
+    window.open(pdf, '_blank')
+  }
+  
   
   return (
+    <>
     <Markdown >{post}</Markdown>
+    <button onClick={openPdf}>pdf</button>
+    </>
   )
 }
 
