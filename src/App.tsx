@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 import Markdown from 'markdown-to-jsx';
-import pdf from './Resume_LuongVanThuan_JrDev.pdf';
+import pdf from './Resume.pdf';
 
 function App() {
   const fileName = 'test';
@@ -16,14 +16,14 @@ function App() {
     });
   }, []);
 
-  const openPdf = () => {
+  const openResumePdfInNewTab = () => {
     window.open(pdf, '_blank');
   };
 
   return (
     <>
       <Markdown>{post}</Markdown>
-      <button onClick={openPdf}>pdf</button>
+      <button onClick={openResumePdfInNewTab}>pdf</button>
     </>
   );
 }
