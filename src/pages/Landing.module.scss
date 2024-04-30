@@ -1,0 +1,41 @@
+@import '@src/assets/style/mixins.scss';
+@import '@src/assets/style/themeVars.module.scss';
+
+
+.landing {
+    width: 65vw;
+    height: 90vh;
+    margin: 0 auto;
+    background-image: url("../assets/imgs/ProfilePic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: -60px;
+}
+
+.introduction {
+    width: 40vw;
+    height: 50vh;
+    position: relative;
+    top: 120px;
+    padding-left: 150px;
+    padding-top: 80px;
+    color: $dark-text-color;
+}
+
+.my-name {
+    font-family: $font-serif;
+    font-size: 40px;
+
+    span {
+        font-size: 55px;
+        font-weight: bold;
+        color: #3AB4F2;
+    }
+}
+
+.role {
+    font-family: $font-cursive;
+    font-size: 22px;
+    color: $dark-text-color;
+}

@@ -1,0 +1,35 @@
+@import '@src/assets/style/themeVars.module.scss';
+
+.navbar {
+    text-align: center;
+    font-family: $font-cursive;
+    font-size: 13px;
+
+    ul {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        li {
+            float: left;
+
+            a {
+                font-weight: bold;
+                display: block;
+                padding: 8px 10px;
+                text-decoration: none;
+                color: $dark-text-color;
+
+                &:hover {
+                    color: $dark-text-color-hoverred;
+                }
+            }
+        }
+
+    }
+
+
+}

@@ -1,0 +1,12 @@
+// Colors
+$dark-background-color: #34353A;
+$dark-text-color: #C7C8CC;
+$dark-text-color-hoverred: #E3E1D9;
+
+// Font families
+$font-serif: "Inter", sans-serif;
+$font-cursive: "Patrick Hand", cursive;
+
+:export {
+    darkBackgroundColor: $dark-background-color ;
+}
