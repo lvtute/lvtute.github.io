@@ -4,4 +4,5 @@ export type Post = {
   date: string;
   shortDescription: string;
   tags: string[];
+  markdown: string;
 };
