@@ -5,6 +5,7 @@ import CodingNotes from './pages/CodingNotes';
 import Projects from './pages/Projects';
 
 const App = () => {
+  console.log('Hello world');
   return (
     <PageContainer>
       <BrowserRouter basename="/">
