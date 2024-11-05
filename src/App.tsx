@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PageContainer from './components/PageContainer';
 import About from './pages/About';
 import CodingNotes from './pages/CodingNotes';
