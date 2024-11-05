@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 const PageContainer = ({ children }: PropsWithChildren) => {
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-[#0f172a] h-screen">
         <header className="absolute right-0 top-0 z-50 max-w-2xl">
           <NavBar />
         </header>

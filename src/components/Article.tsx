@@ -6,8 +6,8 @@ type Props = {
 
 const Article = ({ post }: Props) => {
   return (
-    <article className="flex flex-col items-start justify-between p-4 backdrop-blur-lg bg-black bg-opacity-10 hover:bg-opacity-15 rounded-sm  transition-colors">
-      <div className="flex items-center gap-x-4 text-xs">
+    <article className="flex flex-col items-start justify-between p-4 backdrop-blur-lg bg-white bg-opacity-10 hover:bg-opacity-15 rounded-sm  transition-colors cursor-pointer">
+      <div className="flex items-center gap-x-2 text-xs">
         <time dateTime="2020-03-16" className="text-gray-500">
           {post.date}
         </time>
