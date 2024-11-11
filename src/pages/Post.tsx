@@ -14,15 +14,15 @@ const Post = () => {
 
   const [content, setContent] = useState<string | null>(null);
 
+  const test = '/test';
+
   useEffect(() => {
     if (thisPost) {
-      import(/* @vite-ignore */ `../assets/markdowns${thisPost.markdown}`).then(
-        (res) => {
-          fetch(res.default)
-            .then((response) => response.text())
-            .then((text) => setContent(text));
-        },
-      );
+      import(/* @vite-ignore */ `/src/markdowns${test}.md`).then((res) => {
+        fetch(res.default)
+          .then((response) => response.text())
+          .then((text) => setContent(text));
+      });
     }
   }, [thisPost]);
 
