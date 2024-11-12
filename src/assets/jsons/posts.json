@@ -5,7 +5,7 @@
     "date": "2024-01-15",
     "shortDescription": "A deep dive into the fundamentals of React.",
     "tags": ["React", "JavaScript", "Web Development"],
-    "markdown": "/understading-react.md"
+    "markdown": "/understading-react"
   },
   {
     "id": "typescript-basics",
@@ -13,6 +13,6 @@
     "date": "2024-02-10",
     "shortDescription": "An introduction to TypeScript and its features.",
     "tags": ["TypeScript", "JavaScript", "Programming"],
-    "markdown": "/typescript-basics.md"
+    "markdown": "/typescript-basics"
   }
 ]
