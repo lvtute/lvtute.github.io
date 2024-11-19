@@ -6,16 +6,8 @@ import { useEffect, useState } from 'react';
 import Markdown from 'markdown-to-jsx';
 
 const posts = _posts as unknown as Post[];
-console.log({ mode: import.meta.env.MODE });
 
-const DEV_MARKDOWNS_PATH = '/src/assets/markdowns';
-const PROD_MARKDOWNS_PATH =
-  'https://raw.githubusercontent.com/lvtute/lvtute.github.io/refs/heads/main/src/assets/markdowns';
-
-const MARKDOWNS_PATH =
-  import.meta.env.MODE === 'development'
-    ? DEV_MARKDOWNS_PATH
-    : PROD_MARKDOWNS_PATH;
+const MARKDOWNS_PATH = import.meta.env.VITE_MARKDOWNS_PATH;
 
 const Post = () => {
   const { postId } = useParams();
@@ -26,11 +18,6 @@ const Post = () => {
 
   useEffect(() => {
     if (thisPost) {
-      // import(/* @vite-ignore */ `${MARKDOWNS_PATH}${test}.md`).then((res) => {
-      //   fetch(res.default)
-      //     .then((response) => response.text())
-      //     .then((text) => setContent(text));
-      // });
       const markdownPath = `${MARKDOWNS_PATH}/${thisPost.markdown}.md`;
       fetch(markdownPath)
         .then((response) => {
