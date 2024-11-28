@@ -4,6 +4,7 @@ import _posts from '../assets/jsons/posts.json';
 import type { Post } from '@src/common/types';
 import { useEffect, useState } from 'react';
 import Markdown from 'markdown-to-jsx';
+import './Post.scss';
 
 const posts = _posts as unknown as Post[];
 
@@ -38,7 +39,11 @@ const Post = () => {
 
   if (!content) return null;
 
-  return <Markdown>{content}</Markdown>;
+  return (
+    <div id="post-content" className="text-gray-300 text-left">
+      <Markdown>{content}</Markdown>
+    </div>
+  );
 };
 
 export default Post;

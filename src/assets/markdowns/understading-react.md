@@ -10,8 +10,6 @@ Example:
 
 > Have you ever wondered how to optimize your code for better performance? In this post, we’ll dive into key strategies and best practices to help you write efficient, maintainable code.
 
----
-
 ## Section 1: Key Concept or Topic
 
 ### Subheading (Optional)
